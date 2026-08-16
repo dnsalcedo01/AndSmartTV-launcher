@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingStart="6dp"
+    android:paddingEnd="6dp"
+    android:paddingTop="5dp"
+    android:paddingBottom="5dp"
+    android:clipChildren="false"
+    android:clipToPadding="false">
+
+    <!-- Card Container locked strictly to 16:9 Aspect Ratio (H,16:9) -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardContainer"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:focusable="true"
+        android:clickable="true"
+        app:cardCornerRadius="14dp"
+        app:cardElevation="0dp"
+        app:cardMaxElevation="0dp"
+        app:cardBackgroundColor="@color/card_bg_default"
+        app:cardPreventCornerOverlap="false"
+        app:cardUseCompatPadding="false"
+        app:layout_constraintDimensionRatio="H,16:9"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <!-- Full 16:9 TV Banner (Used when app provides native banner) -->
+            <ImageView
+                android:id="@+id/ivBanner"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="fitXY"
+                android:visibility="gone"
+                tools:visibility="gone" />
+
+            <!-- Fallback Banner / Brand Card Container -->
+            <RelativeLayout
+                android:id="@+id/layoutFallback"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="10dp"
+                android:gravity="center">
+
+                <ImageView
+                    android:id="@+id/ivIcon"
+                    android:layout_width="46dp"
+                    android:layout_height="46dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_above="@id/tvLabel"
+                    android:layout_marginBottom="4dp"
+                    android:scaleType="fitCenter"
+                    tools:src="@android:drawable/sym_def_app_icon" />
+
+                <TextView
+                    android:id="@+id/tvLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:maxLines="1"
+                    android:ellipsize="end"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/text_primary"
+                    android:fontFamily="@font/tv_font"
+                    android:gravity="center"
+                    tools:text="App Name" />
+            </RelativeLayout>
+
+            <!-- Focus Neon Glow Overlay -->
+            <View
+                android:id="@+id/viewFocusGlow"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/bg_card_favorite_focus_dark"
+                android:visibility="gone"
+                tools:visibility="visible" />
+
+            <!-- Move Mode Overlay Badge -->
+            <ImageView
+                android:id="@+id/ivMoveBadge"
+                android:layout_width="26dp"
+                android:layout_height="26dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_margin="6dp"
+                android:src="@drawable/ic_move_badge"
+                android:tint="@color/accent_cyan"
+                android:visibility="gone"
+                tools:visibility="visible"
+                android:contentDescription="Move Mode" />
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

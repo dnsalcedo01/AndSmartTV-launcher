@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/dialogContainer"
+    android:layout_width="480dp"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_dialog_glass_dark"
+    android:orientation="vertical"
+    android:padding="26dp">
+
+    <!-- Header with App Icon and Info -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginBottom="16dp">
+
+        <ImageView
+            android:id="@+id/ivAppIcon"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginEnd="16dp"
+            tools:src="@android:drawable/sym_def_app_icon" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvAppTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="19sp"
+                android:textStyle="bold"
+                android:fontFamily="@font/tv_font"
+                android:textColor="@color/text_primary"
+                tools:text="Application Title" />
+
+            <TextView
+                android:id="@+id/tvPackageName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:fontFamily="@font/tv_font"
+                android:textColor="@color/text_muted"
+                tools:text="com.example.app" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:id="@+id/divOptions"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#20FFFFFF"
+        android:layout_marginBottom="12dp" />
+
+    <!-- Action Buttons with Official Vector Icons -->
+    <Button
+        android:id="@+id/btnFavorite"
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:layout_marginBottom="7dp"
+        android:background="@drawable/btn_dialog_solid_selector"
+        android:drawableStart="@drawable/ic_star_filled"
+        android:drawablePadding="10dp"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:gravity="start|center_vertical"
+        android:text="Add to Favorites"
+        android:textAllCaps="false"
+        android:fontFamily="@font/tv_font"
+        android:textColor="@color/text_primary"
+        android:textSize="14sp" />
+
+    <Button
+        android:id="@+id/btnChangeBanner"
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:layout_marginBottom="7dp"
+        android:background="@drawable/btn_dialog_solid_selector"
+        android:drawableStart="@drawable/ic_image"
+        android:drawablePadding="10dp"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:gravity="start|center_vertical"
+        android:text="Change Banner / Logo (16:9)"
+        android:textAllCaps="false"
+        android:fontFamily="@font/tv_font"
+        android:textColor="@color/text_primary"
+        android:textSize="14sp" />
+
+    <Button
+        android:id="@+id/btnMove"
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:layout_marginBottom="7dp"
+        android:background="@drawable/btn_dialog_solid_selector"
+        android:drawableStart="@drawable/ic_swap"
+        android:drawablePadding="10dp"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:gravity="start|center_vertical"
+        android:text="@string/app_move"
+        android:textAllCaps="false"
+        android:fontFamily="@font/tv_font"
+        android:textColor="@color/text_primary"
+        android:textSize="14sp" />
+
+    <Button
+        android:id="@+id/btnHide"
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:layout_marginBottom="7dp"
+        android:background="@drawable/btn_dialog_solid_selector"
+        android:drawableStart="@drawable/ic_visibility_off"
+        android:drawablePadding="10dp"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:gravity="start|center_vertical"
+        android:text="@string/app_hide"
+        android:textAllCaps="false"
+        android:fontFamily="@font/tv_font"
+        android:textColor="@color/text_primary"
+        android:textSize="14sp" />
+
+    <Button
+        android:id="@+id/btnAppInfo"
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:layout_marginBottom="7dp"
+        android:background="@drawable/btn_dialog_solid_selector"
+        android:drawableStart="@drawable/ic_info"
+        android:drawablePadding="10dp"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:gravity="start|center_vertical"
+        android:text="@string/app_info"
+        android:textAllCaps="false"
+        android:fontFamily="@font/tv_font"
+        android:textColor="@color/text_primary"
+        android:textSize="14sp" />
+
+    <Button
+        android:id="@+id/btnUninstall"
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:background="@drawable/btn_dialog_danger_solid_selector"
+        android:drawableStart="@drawable/ic_delete"
+        android:drawablePadding="10dp"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:gravity="start|center_vertical"
+        android:text="@string/app_uninstall"
+        android:textAllCaps="false"
+        android:fontFamily="@font/tv_font"
+        android:textColor="#FFFFFF"
+        android:textSize="14sp" />
+
+</LinearLayout>

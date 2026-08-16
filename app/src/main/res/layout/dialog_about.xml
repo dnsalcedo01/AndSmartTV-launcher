@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/dialogContainer"
+    android:layout_width="500dp"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_dialog_glass_dark"
+    android:orientation="vertical"
+    android:padding="28dp">
+
+    <!-- App Title & Icon -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginBottom="16dp">
+
+        <ImageView
+            android:id="@+id/ivAboutLogo"
+            android:layout_width="52dp"
+            android:layout_height="52dp"
+            android:layout_marginEnd="16dp"
+            android:src="@mipmap/ic_launcher"
+            android:contentDescription="@string/app_name" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvAboutTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="AndSmartTV Launcher"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:fontFamily="@font/tv_font"
+                android:textColor="@color/text_primary" />
+
+            <TextView
+                android:id="@+id/tvAppVersion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="13sp"
+                android:fontFamily="@font/tv_font"
+                android:textColor="@color/accent_cyan"
+                tools:text="v1.5.2 (Build 9) • Android Nougat Leanback" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:id="@+id/divAbout"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#20FFFFFF"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Description -->
+    <TextView
+        android:id="@+id/tvAboutDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="An open-source Android TV launcher compatible with Android Nougat TV boxes and above, featuring glassmorphic aesthetics, 16:9 banner customization, and remote-optimized controls."
+        android:textSize="13sp"
+        android:fontFamily="@font/tv_font"
+        android:textColor="@color/text_secondary"
+        android:lineSpacingMultiplier="1.2"
+        android:layout_marginBottom="20dp" />
+
+    <!-- Developer & GitHub Info Container -->
+    <LinearLayout
+        android:id="@+id/layoutGithubLink"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:focusable="true"
+        android:clickable="true"
+        android:background="@drawable/btn_dialog_action_selector"
+        android:padding="12dp"
+        android:layout_marginBottom="18dp">
+
+        <ImageView
+            android:id="@+id/ivGithubIcon"
+            android:layout_width="26dp"
+            android:layout_height="26dp"
+            android:layout_marginEnd="12dp"
+            android:src="@drawable/ic_github" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvDevName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Developer: dnsalcedo"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:fontFamily="@font/tv_font"
+                android:textColor="@color/text_primary" />
+
+            <TextView
+                android:id="@+id/tvGithubLink"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="https://github.com/dnsalcedo01"
+                android:textSize="12sp"
+                android:fontFamily="@font/tv_font"
+                android:textColor="@color/accent_cyan" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvOpenLink"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Open ↗"
+            android:textSize="13sp"
+            android:fontFamily="@font/tv_font"
+            android:textColor="@color/text_primary" />
+    </LinearLayout>
+
+    <!-- Close Button -->
+    <Button
+        android:id="@+id/btnClose"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:background="@drawable/btn_dialog_action_selector"
+        android:text="Close"
+        android:textAllCaps="false"
+        android:fontFamily="@font/tv_font"
+        android:textColor="@color/text_primary"
+        android:textSize="14sp" />
+
+</LinearLayout>

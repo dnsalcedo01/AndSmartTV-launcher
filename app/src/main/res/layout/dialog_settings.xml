@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/dialogContainer"
+    android:layout_width="540dp"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_dialog_glass_dark"
+    android:orientation="vertical"
+    android:padding="26dp">
+
+    <TextView
+        android:id="@+id/tvSettingsTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/settings_title"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:fontFamily="@font/tv_font"
+        android:textColor="@color/text_primary"
+        android:layout_marginBottom="14dp" />
+
+    <!-- Dark Mode / Light Mode Toggle -->
+    <TextView
+        android:id="@+id/tvHeaderDisplayMode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Display Mode"
+        android:textSize="13sp"
+        android:fontFamily="@font/tv_font"
+        android:textColor="@color/text_secondary"
+        android:layout_marginBottom="6dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="12dp">
+
+        <Button
+            android:id="@+id/btnModeDark"
+            android:layout_width="0dp"
+            android:layout_height="42dp"
+            android:layout_weight="1"
+            android:layout_marginEnd="4dp"
+            android:background="@drawable/btn_dialog_solid_selector"
+            android:drawableStart="@drawable/ic_dark_mode"
+            android:drawablePadding="8dp"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:text="Dark Mode"
+            android:textAllCaps="false"
+            android:fontFamily="@font/tv_font"
+            android:textColor="@color/text_primary"
+            android:textSize="13sp" />
+
+        <Button
+            android:id="@+id/btnModeLight"
+            android:layout_width="0dp"
+            android:layout_height="42dp"
+            android:layout_weight="1"
+            android:layout_marginStart="4dp"
+            android:background="@drawable/btn_dialog_solid_selector"
+            android:drawableStart="@drawable/ic_light_mode"
+            android:drawablePadding="8dp"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:text="Light Mode"
+            android:textAllCaps="false"
+            android:fontFamily="@font/tv_font"
+            android:textColor="@color/text_primary"
+            android:textSize="13sp" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/div1"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#20FFFFFF"
+        android:layout_marginBottom="12dp" />
+
+    <!-- Ambient Theme Accent -->
+    <TextView
+        android:id="@+id/tvHeaderAmbientTheme"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ambient Theme Accent"
+        android:textSize="13sp"
+        android:fontFamily="@font/tv_font"
+        android:textColor="@color/text_secondary"
+        android:layout_marginBottom="6dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="12dp">
+
+        <Button
+            android:id="@+id/btnThemeMidnight"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:layout_marginEnd="4dp"
+            android:background="@drawable/btn_dialog_solid_selector"
+            android:text="Midnight"
+            android:textAllCaps="false"
+            android:fontFamily="@font/tv_font"
+            android:textColor="@color/text_primary"
+            android:textSize="13sp" />
+
+        <Button
+            android:id="@+id/btnThemeSunset"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:layout_marginStart="2dp"
+            android:layout_marginEnd="2dp"
+            android:background="@drawable/btn_dialog_solid_selector"
+            android:text="Sunset"
+            android:textAllCaps="false"
+            android:fontFamily="@font/tv_font"
+            android:textColor="@color/text_primary"
+            android:textSize="13sp" />
+
+        <Button
+            android:id="@+id/btnThemeEmerald"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:layout_marginStart="2dp"
+            android:layout_marginEnd="2dp"
+            android:background="@drawable/btn_dialog_solid_selector"
+            android:text="Emerald"
+            android:textAllCaps="false"
+            android:fontFamily="@font/tv_font"
+            android:textColor="@color/text_primary"
+            android:textSize="13sp" />
+
+        <Button
+            android:id="@+id/btnThemePurple"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:layout_marginStart="4dp"
+            android:background="@drawable/btn_dialog_solid_selector"
+            android:text="Purple"
+            android:textAllCaps="false"
+            android:fontFamily="@font/tv_font"
+            android:textColor="@color/text_primary"
+            android:textSize="13sp" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/div2"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#20FFFFFF"
+        android:layout_marginBottom="12dp" />
+
+    <!-- Hidden Apps manager option -->
+    <Button
+        android:id="@+id/btnManageHidden"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/btn_dialog_solid_selector"
+        android:drawableStart="@drawable/ic_visibility_off"
+        android:drawablePadding="8dp"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:text="View &amp; Restore Hidden Apps (0)"
+        android:textAllCaps="false"
+        android:fontFamily="@font/tv_font"
+        android:textColor="@color/text_primary"
+        android:textSize="13sp" />
+
+    <!-- Action Buttons Row -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnAboutLauncher"
+            android:layout_width="0dp"
+            android:layout_height="42dp"
+            android:layout_weight="1"
+            android:layout_marginEnd="4dp"
+            android:background="@drawable/btn_dialog_solid_selector"
+            android:drawableStart="@drawable/ic_info"
+            android:drawablePadding="8dp"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:text="About Launcher"
+            android:textAllCaps="false"
+            android:fontFamily="@font/tv_font"
+            android:textColor="@color/accent_cyan"
+            android:textSize="13sp" />
+
+        <Button
+            android:id="@+id/btnSystemSettings"
+            android:layout_width="0dp"
+            android:layout_height="42dp"
+            android:layout_weight="1"
+            android:layout_marginStart="4dp"
+            android:background="@drawable/btn_dialog_solid_selector"
+            android:drawableStart="@drawable/ic_settings_gear"
+            android:drawablePadding="8dp"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:text="Android TV Settings"
+            android:textAllCaps="false"
+            android:fontFamily="@font/tv_font"
+            android:textColor="@color/accent_cyan"
+            android:textSize="13sp" />
+    </LinearLayout>
+
+</LinearLayout>

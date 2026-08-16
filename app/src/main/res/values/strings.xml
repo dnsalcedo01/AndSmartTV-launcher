@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">AndSmartTV Launcher</string>
+    <string name="section_apps">Apps &amp; Games</string>
+    <string name="app_open">Open App</string>
+    <string name="app_move">Move / Rearrange</string>
+    <string name="app_hide">Hide from Launcher</string>
+    <string name="app_info">App Info</string>
+    <string name="app_uninstall">Uninstall</string>
+    <string name="settings_title">Launcher Settings</string>
+    <string name="grid_density">Grid Columns</string>
+    <string name="col_4">4 Columns</string>
+    <string name="col_5">5 Columns (Default)</string>
+    <string name="col_6">6 Columns</string>
+    <string name="hidden_apps_count">Hidden Apps: %1$d</string>
+    <string name="restore_hidden">Restore Hidden Apps</string>
+    <string name="system_settings">Android TV Settings</string>
+</resources>

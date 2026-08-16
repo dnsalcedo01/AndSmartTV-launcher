@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/dialogContainer"
+    android:layout_width="520dp"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_dialog_glass_dark"
+    android:orientation="vertical"
+    android:padding="26dp">
+
+    <!-- Title -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginBottom="14dp">
+
+        <ImageView
+            android:id="@+id/ivHiddenIcon"
+            android:layout_width="26dp"
+            android:layout_height="26dp"
+            android:layout_marginEnd="10dp"
+            android:src="@drawable/ic_visibility_off"
+            android:tint="@color/accent_cyan" />
+
+        <TextView
+            android:id="@+id/tvHiddenTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hidden Applications"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:fontFamily="@font/tv_font"
+            android:textColor="@color/text_primary" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/divHidden1"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#20FFFFFF"
+        android:layout_marginBottom="12dp" />
+
+    <!-- Empty State -->
+    <TextView
+        android:id="@+id/tvEmptyHidden"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="No hidden applications. All apps are visible on the homescreen."
+        android:textSize="13sp"
+        android:fontFamily="@font/tv_font"
+        android:textColor="@color/text_secondary"
+        android:gravity="center"
+        android:padding="20dp"
+        android:visibility="gone"
+        tools:visibility="visible" />
+
+    <!-- Hidden Apps List -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvHiddenApps"
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        android:layout_marginBottom="14dp" />
+
+    <View
+        android:id="@+id/divHidden2"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#20FFFFFF"
+        android:layout_marginBottom="14dp" />
+
+    <!-- Bottom Action Buttons -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnUnhideAll"
+            android:layout_width="0dp"
+            android:layout_height="42dp"
+            android:layout_weight="1"
+            android:layout_marginEnd="6dp"
+            android:background="@drawable/btn_dialog_solid_selector"
+            android:text="Unhide All"
+            android:textAllCaps="false"
+            android:fontFamily="@font/tv_font"
+            android:textColor="@color/text_primary"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/btnCloseHidden"
+            android:layout_width="0dp"
+            android:layout_height="42dp"
+            android:layout_weight="1"
+            android:layout_marginStart="6dp"
+            android:background="@drawable/btn_dialog_solid_selector"
+            android:text="Close"
+            android:textAllCaps="false"
+            android:fontFamily="@font/tv_font"
+            android:textColor="@color/text_primary"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+</LinearLayout>

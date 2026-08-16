@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Focused State (Pure color shift to Accent Blue with soft glowing stroke) -->
+    <item android:state_focused="true">
+        <shape android:shape="rectangle">
+            <solid android:color="#2563EB" />
+            <stroke
+                android:width="2dp"
+                android:color="#93C5FD" />
+            <corners android:radius="12dp" />
+        </shape>
+    </item>
+
+    <!-- Pressed State -->
+    <item android:state_pressed="true">
+        <shape android:shape="rectangle">
+            <solid android:color="#1D4ED8" />
+            <corners android:radius="12dp" />
+        </shape>
+    </item>
+
+    <!-- Normal State -->
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="#1E293B" />
+            <stroke
+                android:width="1dp"
+                android:color="#1EFFFFFF" />
+            <corners android:radius="12dp" />
+        </shape>
+    </item>
+</selector>
