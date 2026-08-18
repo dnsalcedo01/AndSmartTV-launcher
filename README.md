@@ -8,7 +8,6 @@
 [![Open Source](https://img.shields.io/badge/Open%20Source-100%25%20Free%20%E2%80%A2%20No%20Paywall-success.svg)](#-inspiration-purpose--open-source)
 
 **AndSmartTV Launcher** (short for *Android Smart TV Launcher*)
-
 is a modern, glassmorphic Leanback launcher natively designed for Android TV boxes. It delivers a fluid, premium TV experience with 16:9 banner support, app reordering, dynamic ambient themes, and remote-optimized navigation.
 
 ---
@@ -61,12 +60,11 @@ This project is **100% free and open-source software (FOSS)**:
 ## ✨ Key Features
 
 - 💎 **Glassmorphic Interface**: Frosted glass docks with smooth scrolling animations and clean focus highlights.
-- 📱 **16:9 TV Banner Support**: Displays official wide 16:9 TV app banners, with custom banner image picker support for sideloaded apps.
+- 📱 **16:9 TV Banner/Logo Support**: Displays official wide 16:9 TV app banners or logos, with custom image picker support for sideloaded apps.
 - ⭐ **Favorite Apps Dock**: Fast access to your favorite pinned apps with smooth navigation between sections.
-- 🔄 **Easy App Reordering**: Long-press OK / Enter to enter Move Mode and rearrange your apps in real time.
-- 🎨 **Adaptive Color Themes**:
-  - **Dark Mode**: Midnight Slate, Sunset Horizon, Emerald Forest, Royal Purple, and Macduff Blue.
-  - **Light Mode**: Slate Frost, Sunrise, Mint Sage, and Lavender with high-contrast text and icons.
+- 🎨 **Ambient Themes / Adaptive Colors**:
+  - **Dark Mode**: Midnight Slate, Sunset Horizon, Emerald Forest, and Royal Purple.
+  - **Light Mode**: Slate Frost, Sunrise, Mint Sage, and Lavender.
 - 📊 **Real-Time Status Bar**:
   - Digital Clock & Date
   - Wi-Fi & Ethernet connection status
@@ -74,7 +72,7 @@ This project is **100% free and open-source software (FOSS)**:
   - Dynamic **VPN connection indicator**
   - USB / Flash drive detection
   - Quick-access Settings button
-- 🎮 **Remote Control Optimized**: Full support for TV remote controls and keyboards (D-Pad, OK, Back, and Menu buttons).
+- 🎮 **Remote Control Optimized**: Full support for TV remote controls (D-Pad, OK, Back, and Menu buttons).
 - 👁️ **Hide & Restore Apps**: Easily hide unwanted pre-installed apps and restore them anytime from Settings.
 
 ---
